@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Kumbh Sans', sans-serif;
 }
 
 body {
@@ -31,8 +37,32 @@ ul {
 	align-items: center;
 	justify-content: center;
 	background-color: white;
-	width: 90%;
+	width: 20rem;
 	text-align: center;
+}
+
+.card span:first-child {
+	font-weight: 700;
+	margin-right: .5rem;
+	font-size: 1.2rem;
+}
+
+.card span:nth-child(2) {
+	opacity: .7;
+}
+
+.city {
+	opacity: .7;
+}
+
+hr {
+	width: 100%;
+	margin-top: 2rem;
+	opacity: .5;
+}
+
+.name-age {
+	margin-bottom: .8rem;
 }
 
 .card img {
@@ -47,12 +77,20 @@ ul {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
+	column-gap: 2rem;
 }
 
 .stats-grid li:first-child,
 li:nth-child(2),
 li:nth-child(3) {
-	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: .5rem;
+}
+
+.stats-grid li:nth-child(4),
+li:nth-child(5),
+li:nth-child(6) {
+	font-size: .8rem;
 }
 
 img {
